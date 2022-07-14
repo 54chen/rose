@@ -74,3 +74,21 @@ rules:
       technology:
         - jdbc
       license: Commons Clause License Condition v1.0[LGPL-2.1-only]
+  - id: no-string-eqeq
+    languages:
+      - java
+    patterns:
+      - pattern-not: null == (String $Y)
+      - pattern: $X == (String $Y)
+    message: >-
+      Strings should not be compared with '=='. This is a reference comparison
+      operator. Use '.equals()' instead.
+    severity: WARNING
+    metadata:
+      grId: GR0013
+      grTitle: SQL injection
+      grDocs: https://github.com/MobSF/owasp-mstg/blob/master/Document/
+      category: correctness
+      technology:
+        - java
+      license: Commons Clause License Condition v1.0[LGPL-2.1-only]
