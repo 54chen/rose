@@ -1,0 +1,5 @@
+monorepo:
+  - /rose-example/*:
+    budles:
+      - java:
+        - semgrep
