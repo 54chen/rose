@@ -11,8 +11,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Base64;
 import java.util.Calendar;
-import java.util.concurrent.ThreadLocalRandom;
-import net.paoding.rose.web.Invocation;
+import net.paoding.rose.web.Invocation; 
 
 public class Test2DAO {
   String dstBucket = System.getenv("bucketname");
